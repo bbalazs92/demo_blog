@@ -50,7 +50,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'guard', '~> 2.18'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  # browser will refresh automatically when you make style changes
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
